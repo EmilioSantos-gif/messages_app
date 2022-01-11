@@ -5,6 +5,7 @@
 package com.mycompany.mensajes_app;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
@@ -24,5 +25,9 @@ public class Conexion {
             System.out.println(e);
         }
         return connection;
+    }
+
+    PreparedStatement prepareStatement() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
